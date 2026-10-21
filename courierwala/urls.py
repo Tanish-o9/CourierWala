@@ -21,10 +21,10 @@ from django.conf.urls.static import static
 from .views import contact_us, index, subscribe_newsletter, track_shipment
 
 
-handler400 = "swiftcourier.views.custom_400"
-handler403 = "swiftcourier.views.custom_403"
-handler404 = "swiftcourier.views.custom_404"
-handler500 = "swiftcourier.views.custom_500"
+handler400 = "courierwala.views.custom_400"
+handler403 = "courierwala.views.custom_403"
+handler404 = "courierwala.views.custom_404"
+handler500 = "courierwala.views.custom_500"
 
 
 urlpatterns = [

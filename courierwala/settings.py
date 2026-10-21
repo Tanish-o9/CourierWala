@@ -200,7 +200,7 @@ MIDDLEWARE = [
 if IS_VERCEL or os.getenv("TRUST_PROXY_SSL_HEADER", default="False" if DEBUG else "True") == "True":
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
-ROOT_URLCONF = "swiftcourier.urls"
+ROOT_URLCONF = "courierwala.urls"
 
 TEMPLATES = [
     {
@@ -209,7 +209,7 @@ TEMPLATES = [
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
-                "swiftcourier.context_processors.ctx_processor",
+                "courierwala.context_processors.ctx_processor",
                 "django.template.context_processors.debug",
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
@@ -226,12 +226,12 @@ SHOW_DEMO_CREDENTIALS = (
     os.getenv("SHOW_DEMO_CREDENTIALS", "True" if (IS_VERCEL or DEBUG) else "False") == "True"
 )
 DEMO_ACCOUNTS = [
-    {"label": "User", "role": "user", "email": "merchant@swiftcourier.app", "password": "MxYDCHHq_kN5Qz!1"},
-    {"label": "Admin", "role": "admin", "email": "ops@swiftcourier.app", "password": "OpC60kAXUZBInb!1"},
-    {"label": "Super Admin", "role": "super_admin", "email": "admin@swiftcourier.app", "password": "Sair9J6GQot9Jn!1"},
+    {"label": "User", "role": "user", "email": "merchant@courierwala.app", "password": "MxYDCHHq_kN5Qz!1"},
+    {"label": "Admin", "role": "admin", "email": "ops@courierwala.app", "password": "OpC60kAXUZBInb!1"},
+    {"label": "Super Admin", "role": "super_admin", "email": "admin@courierwala.app", "password": "Sair9J6GQot9Jn!1"},
 ]
 
-WSGI_APPLICATION = "swiftcourier.wsgi.application"
+WSGI_APPLICATION = "courierwala.wsgi.application"
 
 
 # Database
@@ -519,7 +519,7 @@ LOGGING = {
     },
 }
 
-TMP_DIR = Path("/tmp/swiftcourier") if IS_VERCEL else BASE_DIR / "tmp"  # Vercel FS is read-only except /tmp
+TMP_DIR = Path("/tmp/courierwala") if IS_VERCEL else BASE_DIR / "tmp"  # Vercel FS is read-only except /tmp
 TMP_DIR.mkdir(parents=True, exist_ok=True)
 
 XPRESSBEES_USERNAME = os.getenv("XPRESSBEES_USERNAME")
@@ -894,7 +894,7 @@ if DEBUG:
 # On CSRF failure, redirect back to the form with a message instead of showing
 # Django's raw 403 page (which also triggers the browser's "Confirm Form
 # Resubmission" nag on reload).
-CSRF_FAILURE_VIEW = "swiftcourier.views.csrf_failure"
+CSRF_FAILURE_VIEW = "courierwala.views.csrf_failure"
 
 
 CORS_ALLOWED_ORIGINS = [
