@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>{% block code %}Error{% endblock %} &middot; SwiftCourier</title>
+  <title>{% block code %}Error{% endblock %} &middot; CourierWala</title>
   <link rel="icon" type="image/x-icon" href="{% static 'favicon/favicon.ico' %}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,8 +64,8 @@
 
   <div class="wrap">
     <span class="brand">
-      <span class="mk">S</span>
-      <span>Swift<span class="accent">Courier</span></span>
+      <span class="mk">C</span>
+      <span>Courier<span class="accent">Wala</span></span>
     </span>
 
     <div class="code">{% block bigcode %}{% endblock %}</div>
