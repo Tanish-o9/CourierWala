@@ -8,8 +8,8 @@
             <!-- brand row -->
             <div class="flex items-center justify-between px-4 h-14 shrink-0">
                 <a href="/" class="main-logo flex items-center gap-2">
-                    <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg text-sm font-extrabold">S</span>
-                    <span class="text-xl font-extrabold tracking-tight">Swift<span class="text-red-500">Courier</span></span>
+                    <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg text-sm font-extrabold">C</span>
+                    <span class="text-xl font-extrabold tracking-tight">Courier<span class="text-red-500">Wala</span></span>
                 </a>
                 <a href="javascript:;"
                    class="collapse-icon w-8 h-8 rounded-full flex items-center justify-center transition rtl:rotate-180"
