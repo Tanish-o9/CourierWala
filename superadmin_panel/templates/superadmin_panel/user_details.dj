@@ -163,7 +163,7 @@
                     <h2 class="text-3xl font-bold tracking-tight">{{ user.full_name|default:"N/A" }}</h2>
                     <div class="flex flex-wrap items-center gap-2 mt-2">
                         <span class="bg-black px-3 py-1 rounded-full text-sm text-white">
-                            SwiftCourier Code: <span class="font-medium">{{ user.shipzee_code }}</span>
+                            CourierWala Code: <span class="font-medium">{{ user.shipzee_code }}</span>
                         </span>
                         <span class="bg-black px-3 py-1 rounded-full text-sm text-white">Joined: {{ user.created_at|date:"M d, Y" }}</span>
                     </div>

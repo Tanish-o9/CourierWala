@@ -89,7 +89,7 @@
                         <th class="px-2 py-1 text-left text-xs font-normal text-gray-600 dark:text-gray-300">S No</th>
                         <th class="px-2 py-1 text-left text-xs font-normal text-gray-600 dark:text-gray-300">EMAIL ID</th>
                         <th class="px-2 py-1 text-left text-xs font-normal text-gray-600 dark:text-gray-300">MOBILE NO</th>
-                        <th class="px-2 py-1 text-left text-xs font-normal text-gray-600 dark:text-gray-300">SWIFTCOURIER CODE</th>
+                        <th class="px-2 py-1 text-left text-xs font-normal text-gray-600 dark:text-gray-300">COURIERWALA CODE</th>
                         <th class="px-2 py-1 text-left text-xs font-normal text-gray-600 dark:text-gray-300">ACTION</th>
                     </tr>
                 </thead>

@@ -7,8 +7,8 @@
             <div class="flex justify-between items-center px-4 py-3">
                 <a href="/"
                    class="main-logo flex items-center shrink-0 gap-2">
-                    <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-black text-sm font-extrabold text-white dark:bg-white dark:text-black">S</span>
-                    <span class="text-2xl font-extrabold tracking-tight align-middle lg:inline text-black dark:text-white">Swift<span class="text-red-600">Courier</span></span>
+                    <span class="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-black text-sm font-extrabold text-white dark:bg-white dark:text-black">C</span>
+                    <span class="text-2xl font-extrabold tracking-tight align-middle lg:inline text-black dark:text-white">Courier<span class="text-red-600">Wala</span></span>
                 </a>
                 <a href="javascript:;"
                    class="collapse-icon w-8 h-8 rounded-full flex items-center hover:bg-gray-500/10 dark:hover:bg-dark-light/10 dark:text-white-light transition duration-300 rtl:rotate-180"
