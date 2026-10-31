@@ -52,7 +52,7 @@
                         <div class="text-lg font-semibold mb-2 text-black dark:text-white">Warehouse Details:</div>
                         <div class="text-sm text-black dark:text-neutral-300">
                             <div>
-                                <strong>SwiftCourier Order ID:</strong> {{ order.get_order_id }}
+                                <strong>CourierWala Order ID:</strong> {{ order.get_order_id }}
                             </div>
                             <div>
                                 <strong>Order Date:</strong> {{ order.order_date|date:"d M Y" }}
@@ -70,7 +70,7 @@
                     <div class="text-lg font-semibold mb-2 text-black dark:text-white">Order Info:</div>
                     <div class="text-sm text-black dark:text-neutral-300">
                         <div>
-                            <strong>SwiftCourier Order ID:</strong> {{ order.get_order_id }}
+                            <strong>CourierWala Order ID:</strong> {{ order.get_order_id }}
                         </div>
                         <div>
                             <strong>Order Date:</strong> {{ order.order_date|date:"d M Y" }}

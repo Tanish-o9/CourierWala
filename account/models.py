@@ -951,7 +951,7 @@ class User(AbstractUser):
     @property
     def shipzee_code(self) -> str:
         """
-        Generate a unique swiftcourier code for the account.
+        Generate a unique CourierWala code for the account.
 
         Returns:
             int: A unique code calculated by adding the account's ID to the base value of 51000.

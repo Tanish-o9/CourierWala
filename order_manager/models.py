@@ -92,7 +92,7 @@ class Hub(MyModel):
             "line1": self.address_line1,
             "line2": self.address_line2,
             "landmark": "Office",
-            "company_name": "SwiftCourier",
+            "company_name": "CourierWala",
             "city": self.city,
             "state": self.state,
             "pin_code": self.pin_code,
@@ -574,7 +574,7 @@ class Order(MyModel):
         }
 
     def get_order_id(self):
-        """Returns a formatted order ID string (SwiftCourier reference)."""
+        """Returns a formatted order ID string (CourierWala reference)."""
         return f"SC{self.id}"
 
     def get_order_id_for_aggregator(self):
