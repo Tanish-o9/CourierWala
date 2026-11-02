@@ -449,7 +449,7 @@
 
                         <!-- Support Info -->
                         <div class="text-center text-xs hide_support_info">
-                            <p class="font-bold">For queries: Mob 6576576765 | Email: support@SwiftCourier.com</p>
+                            <p class="font-bold">For queries: Mob 6576576765 | Email: support@CourierWala.com</p>
                         </div>
 
                         <hr class="border-black my-1" />
@@ -459,10 +459,10 @@
                             store policy.
                         </p>
                         <div class="flex justify-between items-center powered_by_hide" id="powered_by">
-                            <p class="font-bold text-xs">Powered By SwiftCourier</p>
+                            <p class="font-bold text-xs">Powered By CourierWala</p>
                             <div id="idiotship_logo" class="ml-2">
                                 <img src="{% static 'images/logo/idiotship_logo.png' %}"
-                                     alt="SwiftCourier Logo"
+                                     alt="CourierWala Logo"
                                      class="h-6 object-contain">
                             </div>
                         </div>
@@ -665,7 +665,7 @@
                             back or exchanged
                             as per the store's exchange/return policy
                         </p>
-                        <i class="font-bold">Powerd By SwiftCourier</i>
+                        <i class="font-bold">Powered By CourierWala</i>
                     </div>
                 </div>
             </div>
@@ -825,7 +825,7 @@
                 });
 
                 // Update preview content
-                const email = supportEmailInput.value || 'support@SwiftCourier.com';
+                const email = supportEmailInput.value || 'support@CourierWala.com';
                 const mobile = supportMobileInput.value || '6576576765';
                 supportPreview.textContent = `For queries: Mob ${mobile} | Email: ${email}`;
             }

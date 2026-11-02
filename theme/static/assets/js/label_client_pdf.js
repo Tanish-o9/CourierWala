@@ -727,7 +727,7 @@
           columns: [
             {
               width: "*",
-              text: "Powered By Idiotship",
+              text: "Powered By CourierWala",
               bold: true,
               alignment: "left",
               fontSize: fontSizeFor(settings, 7),
@@ -751,7 +751,7 @@
             widths: ["*", Math.max(44, szFit[0] + 8)],
             body: [
               [
-                { text: "Powered By Idiotship", bold: true, alignment: "left", margin: [0, 4, 0, 0] },
+                { text: "Powered By CourierWala", bold: true, alignment: "left", margin: [0, 4, 0, 0] },
                 shipzeeLogo
                   ? { image: shipzeeLogo, fit: [szFit[0], szFit[1]], alignment: "right" }
                   : { text: "" },

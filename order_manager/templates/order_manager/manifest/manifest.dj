@@ -1,8 +1,8 @@
 <div class="manifest-section">
 
     <h1>
-        <img src="{{ logo }}" alt="SwiftCourier Logo" width="50px" />
-        SwiftCourier Manifest
+        <img src="{{ logo }}" alt="CourierWala Logo" width="50px" />
+        CourierWala Manifest
     </h1>
 
     <!-- HEADER -->
