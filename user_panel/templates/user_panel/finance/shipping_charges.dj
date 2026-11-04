@@ -33,7 +33,7 @@
                         <tr>
                             <th class="px-4 py-3 text-left text-[11px] font-semibold uppercase tracking-wider text-neutral-500">S.No</th>
                             <th class="px-4 py-3 text-left text-[11px] font-semibold uppercase tracking-wider text-neutral-500">Order ID</th>
-                            <th class="px-4 py-3 text-left text-[11px] font-semibold uppercase tracking-wider text-neutral-500">SwiftCourier ID</th>
+                            <th class="px-4 py-3 text-left text-[11px] font-semibold uppercase tracking-wider text-neutral-500">CourierWala ID</th>
                             <th class="px-4 py-3 text-left text-[11px] font-semibold uppercase tracking-wider text-neutral-500">Date</th>
                             <th class="px-4 py-3 text-left text-[11px] font-semibold uppercase tracking-wider text-neutral-500">AWB</th>
                             <th class="px-4 py-3 text-left text-[11px] font-semibold uppercase tracking-wider text-neutral-500">Courier</th>

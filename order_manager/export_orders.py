@@ -10,7 +10,7 @@ from .models import Order
 # HEADERS
 # =========================
 HEADERS = [
-    "IdiotShip Order ID",
+    "CourierWala Order ID",
     "Courier",
     "AWB No",
     "Status",
@@ -82,7 +82,7 @@ class Echo:
 # =========================
 def generate_bulk_export_response(
     orders: QuerySet[Order],
-    filename: str = "swiftcourier_bulk_orders_export",
+    filename: str = "courierwala_bulk_orders_export",
 ):
     """
     Optimized CSV export:
