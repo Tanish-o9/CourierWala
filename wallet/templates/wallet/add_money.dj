@@ -76,7 +76,7 @@
                     "key": "{{ key_id }}", // Razorpay key ID from backend
                     "amount": order.amount, // Order amount in paise
                     "currency": "INR",
-                    "name": "SwiftCourier",
+                    "name": "CourierWala",
                     "image": "https://app.idiotship.tech/static/images/logo.png",
                     "description": "Payment for order #" + order.order_id,
                     "prefill": {

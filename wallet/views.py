@@ -33,7 +33,7 @@ rz_client = razorpay.Client(
     auth=(settings.RAZORPAY_KEY_ID, settings.RAZORPAY_KEY_SECRET)
 )
 rz_client.enable_retry(True)
-rz_client.set_app_details({"title": "IdiotShip", "version": "1.0"})
+rz_client.set_app_details({"title": "CourierWala", "version": "1.0"})
 
 
 @user_required
