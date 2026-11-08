@@ -23,7 +23,7 @@ from account.models import User
 
 DEMO = [
     {
-        "email": "merchant@swiftcourier.app",
+        "email": "merchant@courierwala.app",
         "password": os.getenv("DEMO_MERCHANT_PASSWORD", "Merchant@2026"),
         "role": "user",
         "full_name": "Demo Merchant",
@@ -31,7 +31,7 @@ DEMO = [
         "balance": 50000,
     },
     {
-        "email": "ops@swiftcourier.app",
+        "email": "ops@courierwala.app",
         "password": os.getenv("DEMO_ADMIN_PASSWORD", "Ops@2026"),
         "role": "admin",
         "full_name": "Ops Admin",
@@ -39,10 +39,10 @@ DEMO = [
         "balance": 0,
     },
     {
-        "email": "admin@swiftcourier.app",
+        "email": "admin@courierwala.app",
         "password": os.getenv("DEMO_SUPERADMIN_PASSWORD", "SuperAdmin@2026"),
         "role": "super_admin",
-        "full_name": "SwiftCourier Admin",
+        "full_name": "CourierWala Admin",
         "company_name": "",
         "balance": 0,
     },
