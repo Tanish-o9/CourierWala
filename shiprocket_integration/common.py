@@ -289,7 +289,7 @@ def ship_order(
 
             res = order_booking(payload, sr_request).json()
             if "shipment_id" not in res:
-                return False, {"error": res.get("message", "Unknown Error").replace("Shiprocket", "SwiftCourier").replace("SHIPROCKET", "SwiftCourier").replace("shiprocket", "SwiftCourier")}
+                return False, {"error": res.get("message", "Unknown Error").replace("Shiprocket", "CourierWala").replace("SHIPROCKET", "CourierWala").replace("shiprocket", "CourierWala")}
 
             logger.debug(f"Shiprocket Order Booking Response: {res}")
 
