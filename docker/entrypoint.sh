@@ -28,18 +28,18 @@ case "${1:-web}" in
     if [ "${SEED_DEMO_USERS:-0}" = "1" ]; then
         python manage.py seed_demo_users || true
     fi
-    exec gunicorn swiftcourier.wsgi:application \
+    exec gunicorn courierwala.wsgi:application \
         --bind 0.0.0.0:8000 --workers "${GUNICORN_WORKERS:-3}" \
         --timeout 60 --access-logfile - --error-logfile -
     ;;
   worker)
-    exec celery -A swiftcourier worker -l info \
+    exec celery -A courierwala worker -l info \
         -Q "${2:-default,ship,webhooks}" \
         --concurrency "${CELERY_WORKER_CONCURRENCY:-2}" \
         -n "${2:-all}@%h"
     ;;
   beat)
-    exec celery -A swiftcourier beat -l info \
+    exec celery -A courierwala beat -l info \
         --scheduler django_celery_beat.schedulers:DatabaseScheduler
     ;;
   crontab)

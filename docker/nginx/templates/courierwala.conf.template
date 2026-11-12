@@ -1,5 +1,5 @@
 # Rendered by the nginx:alpine entrypoint (envsubst) into
-# /etc/nginx/conf.d/swiftcourier.conf using the DOMAIN env var (= PRIMARY_HOST).
+# /etc/nginx/conf.d/courierwala.conf using the DOMAIN env var (= PRIMARY_HOST).
 # NOTE: nginx refuses to start until a cert for DOMAIN exists at the path below —
 # see DEPLOYMENT.md for the one-time certbot bootstrap before first `docker compose up nginx`.
 
