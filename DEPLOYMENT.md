@@ -1,4 +1,4 @@
-# Deploying SwiftCourier to AWS (EC2 + RDS)
+# Deploying CourierWala to AWS (EC2 + RDS)
 
 Assumes: an existing RDS Postgres instance, a domain you control, and a fresh EC2 instance.
 The compose stack already runs Postgres against RDS (no `db` service) and every container
@@ -37,7 +37,7 @@ a container dying, it doesn't start the daemon on boot.
 ## 3. Get the code and configure `.env`
 
 ```bash
-git clone <your-repo-url> swiftcourier && cd swiftcourier
+git clone <your-repo-url> courierwala && cd courierwala
 cp .env.sample .env
 ```
 Edit `.env` yourself (you said you'd handle this) — the fields that matter for this deploy:
@@ -75,14 +75,14 @@ port 80/443 itself (nginx isn't running yet, so this is safe):
 
 ```bash
 docker run --rm -p 80:80 -p 443:443 \
-  -v swiftcourier_certbot-certs:/etc/letsencrypt \
-  -v swiftcourier_certbot-www:/var/www/certbot \
+  -v courierwala_certbot-certs:/etc/letsencrypt \
+  -v courierwala_certbot-www:/var/www/certbot \
   certbot/certbot certonly --standalone \
   -d "$PRIMARY_HOST" \
   --email you@example.com --agree-tos --no-eff-email -n
 ```
 (Volume names are prefixed with the compose project name — usually the directory name,
-`swiftcourier`; check with `docker volume ls` if the command above says the volume doesn't exist yet,
+`courierwala`; check with `docker volume ls` if the command above says the volume doesn't exist yet,
 or just run `docker compose up -d --no-start nginx` first to create the named volumes.)
 
 ## 7. Start nginx and the renewal loop
@@ -99,7 +99,7 @@ no downtime):
 ```bash
 crontab -e
 # add:
-0 3 * * 0 cd /path/to/swiftcourier && docker compose exec nginx nginx -s reload
+0 3 * * 0 cd /path/to/courierwala && docker compose exec nginx nginx -s reload
 ```
 
 ## 8. Confirm "never shuts down"

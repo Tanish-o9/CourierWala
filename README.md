@@ -1,5 +1,5 @@
-# 🚚 SwiftCourier – Courier Aggregator Platform
-**SwiftCourier** is a powerful courier aggregation platform that enables businesses to seamlessly manage, optimize, and automate their shipping operations across multiple courier partners from a single interface.
+# 🚚 CourierWala – Courier Aggregator Platform
+**CourierWala** is a powerful courier aggregation platform that enables businesses to seamlessly manage, optimize, and automate their shipping operations across multiple courier partners from a single interface.
 
 ---
 
@@ -106,7 +106,7 @@ uv run celery -A swiftcourier worker -l info -P solo
 
 ## 📄 PDF Generation (WeasyPrint)
 
-SwiftCourier uses **WeasyPrint** for generating:
+CourierWala uses **WeasyPrint** for generating:
 
 * Shipping labels
 * Invoices
@@ -133,5 +133,5 @@ If you face issues:
 
 ---
 
-## 💡 About SwiftCourier
-SwiftCourier simplifies logistics by bridging businesses with multiple courier providers, enabling faster, smarter, and more reliable deliveries.
+## 💡 About CourierWala
+CourierWala simplifies logistics by bridging businesses with multiple courier providers, enabling faster, smarter, and more reliable deliveries.

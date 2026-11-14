@@ -1,4 +1,4 @@
-# SwiftCourier — Pages, Routes & UI Spec
+# CourierWala — Pages, Routes & UI Spec
 
 A complete map of every URL, every rendered page, and a deep description of each
 page's layout, components and actions. Written to hand to a design tool (Stitch)
@@ -10,7 +10,7 @@ interactivity · ApexCharts / simple-datatables where charts/tables need it.
 
 ## 1. Product in one paragraph
 
-SwiftCourier is a **multi-courier shipping aggregator for Indian D2C / B2B
+CourierWala is a **multi-courier shipping aggregator for Indian D2C / B2B
 merchants**. A merchant creates orders (manually, by Excel upload, or via a
 Shopify connection), the platform picks a courier from the merchant's assigned
 rate cards, books the shipment, tracks it through the lifecycle via carrier
@@ -194,7 +194,7 @@ Legend: **P** = renders a full HTML page · **A** = JSON/API · **H** = webhook 
 ### Public / root
 | Method-ish | URL | name | View | Notes |
 |---|---|---|---|---|
-| P/redirect | `/` | `index` | `swiftcourier.views.index` | bounces to the right dashboard by role, or to signin |
+| P/redirect | `/` | `index` | `courierwala.views.index` | bounces to the right dashboard by role, or to signin |
 | P | `/track-shipment/?awb_number=` | `track-shipment` | `track_shipment` | public AWB tracker — timeline of past/current/future statuses |
 | A | `/subscribe_newsletter/?email=` | `subscribe-newsletter` | — | marketing-site newsletter opt-in |
 | A | `/contact_us/` | `contact-us` | — | marketing-site contact / quote form |
